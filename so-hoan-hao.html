@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra số hoàn hảo</title>
+</head>
+
+<body>
+    <script>
+        let num = Number(prompt('Nhập vào số dương bất kì'));
+        let sum = 0;
+        if (num <= 0) {
+            console.log('Vui lòng nhập số dương!!!');
+        } else {
+            for (let i = 1; i < num; i++) {
+
+                // Kiểm tra số nhập vào có chia hết cho phần tử thứ i hay không
+                // Nếu chia hết, thì i là ước của số đó, và cộng toàn bộ ước của số đó vào
+                if (num % i == 0) {
+                    console.log(i);
+                    sum += i;
+
+                }
+            }
+            console.log(sum);
+            // Nếu tổng của các ước bằng chính số nhập vào thì là số hoàn hảo
+            if (sum === num) {
+                console.log('Đây là số hoàn hảo!!');
+            } else {
+                console.log('Đây không phải số hoàn hảo');
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
