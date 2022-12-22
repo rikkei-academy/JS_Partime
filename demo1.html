@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo câu điều kiện</title>
+</head>
+
+<body>
+    <script>
+        let num = Number(prompt('Nhập vào giá trị bất kỳ'))
+        if (num < 0) {
+            console.log('giá trị nhập lớn hơn 0');
+        }
+        if (num > 5) {
+            console.log('giá trị nhập lớn hơn 5', num);
+        } else {
+            console.log('giá trị nhập nhỏ hơn 5', num);
+        }
+
+        // Kiểm tra số lớn hơn khi nhập 2 số
+
+        let number1 = Number(prompt('Nhập số a'))
+        let number2 = Number(prompt('Nhập số b'))
+        if (number1 > number2) {
+            console.log('Số lớn nhất là', number1);
+        } else {
+            console.log('Số lớn nhất là', number2);
+        }
+
+        // Demo với if else if
+
+        let mark = +prompt('Nhập vào số điểm');
+
+        if (mark >= 8) {
+            console.log('Học sinh giỏi');
+        } else if (mark >= 7) {
+            console.log("Học sinh khá");
+        } else if (mark >= 5) {
+            console.log('Học sinh trung bình');
+        } else {
+            console.log('Học sinh yếu!');
+        }
+
+    </script>
+
+</body>
+
+</html>
